@@ -17,7 +17,7 @@
            query: {
             code: {
               $or: [
-                "http://loinc.org|58941-6",
+                "http://loinc.org|8302-2",
                 "http://loinc.org|8462-4",
                 "http://loinc.org|8480-6",
                 "http://loinc.org|2085-9",
@@ -170,7 +170,7 @@
     $('#height').html(p.height);
     $('#systolicbp').html(p.systolicbp);
     $('#diastolicbp').html(p.diastolicbp);
-    $('#ldl').html(p.ldl);
+    $('#ldl').html(JSON.stringify(p.obv));
     $('#hdl').html(p.hdl);
   };
 

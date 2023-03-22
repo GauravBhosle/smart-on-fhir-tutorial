@@ -93,8 +93,8 @@
 
           p.hdl = getQuantityValueAndUnit(hdl[0]);
           p.ldl = getQuantityValueAndUnit(ldl[0]);
-          console.log('p:');
-          console.log(p);
+          p.obv = obv
+          console.log({p});
           ret.resolve(p);
         });
       } else {
@@ -122,6 +122,7 @@
       diastolicbp: {value: ''},
       ldl: {value: ''},
       hdl: {value: ''},
+      obv:undefined
     };
   }
 

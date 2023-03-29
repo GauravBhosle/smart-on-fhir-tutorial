@@ -98,6 +98,7 @@
           ret.resolve(p);
         });
       } else {
+        console.log("Patient not found");
         onError();
       }
     }

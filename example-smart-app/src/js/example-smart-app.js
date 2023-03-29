@@ -93,8 +93,8 @@
 
           p.hdl = getQuantityValueAndUnit(hdl[0]);
           p.ldl = getQuantityValueAndUnit(ldl[0]);
-          console.log('p:');
-          console.log(p);
+          p.obv = obv
+          console.log({p});
           ret.resolve(p);
         });
       } else {
@@ -109,6 +109,7 @@
 
   function defaultPatient(){
 
+    
     return {
       fname: {value: ''},
       lname: {value: ''},
@@ -170,7 +171,7 @@
     $('#height').html(p.height);
     $('#systolicbp').html(p.systolicbp);
     $('#diastolicbp').html(p.diastolicbp);
-    $('#ldl').html(p.ldl);
+    $('#ldl').html(JSON.stringify(p.obv));
     $('#hdl').html(p.hdl);
   };
 

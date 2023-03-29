@@ -108,7 +108,7 @@
   };
 
   function defaultPatient(){
-    
+
     return {
       fname: {value: ''},
       lname: {value: ''},
@@ -122,6 +122,7 @@
       diastolicbp: {value: ''},
       ldl: {value: ''},
       hdl: {value: ''},
+      obv:undefined
     };
   }
 

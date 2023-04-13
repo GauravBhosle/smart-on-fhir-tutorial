@@ -10,6 +10,7 @@
     function onReady(smart)  {
       if (smart.hasOwnProperty('patient')) {
         var patient = smart.patient;
+        console.log('Context', smart.state.context);
         var pt = patient.read();
 
          var obv = smart.patient.api.fetchAll({
@@ -102,7 +103,7 @@
         onError();
       }
     }
-
+    
     FHIR.oauth2.ready(onReady, onError);
     return ret.promise();
 
